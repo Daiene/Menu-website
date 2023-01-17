@@ -37,3 +37,23 @@
 .cardapio-opcoes img{
     max-height: 100%;
 }
+
+.cartao-pokemon.aberto{
+    display: block;
+}
+
+.cor-salada {
+    background-color: #FCC719;
+}
+
+.cor-bacon {
+    background-color: #ED8A8B;
+}
+
+.cor-frango {
+    background-color: #76BEFE;
+}
+
+.cor-tudo {
+    background-color: #49D0B0;
+}
