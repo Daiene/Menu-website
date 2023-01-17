@@ -1,0 +1,39 @@
+.cardapio-opcoes {
+    border: 5px solid yellow;
+    /*display: none;*/
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.cardapio-opcoes .cartao-topo{
+    padding: 30px 40px 0;
+}
+
+.cardapio-opcoes .name{
+    margin-bottom: 5px;
+}
+
+.cardapio-opcoes .tipo{
+    font-size: 12px;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cardapio-opcoes .detalhes{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardapio-opcoes .cartao-imagem{
+    width: 350px;
+    height: 350px;
+}
+
+.cardapio-opcoes img{
+    max-height: 100%;
+}
