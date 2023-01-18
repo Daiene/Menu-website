@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-color: #b7c5be;
     color: black;
     padding: 0 5px;
@@ -19,7 +19,7 @@
 }
 
 .opcoes .botao:hover { 
-    transform: scale(1.05);
+    transform: scale(1.25);
 }
 
 .opcoes .botao img {
@@ -32,6 +32,6 @@
     font-weight: bold;
 }
 
-.opcoes .botao .ativo {
+.opcoes .botao.ativo {
     background-color: #FA6668;
 }
