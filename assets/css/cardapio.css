@@ -1,20 +1,19 @@
-.cardapio-opcoes {
-    border: 5px solid yellow;
+.cartao-lanche {
     /*display: none;*/
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
     width: 500px;
 }
 
-.cardapio-opcoes .cartao-topo{
+.cartao-lanche .cartao-topo{
     padding: 30px 40px 0;
 }
 
-.cardapio-opcoes .name{
+.cartao-lanche .name{
     margin-bottom: 5px;
 }
 
-.cardapio-opcoes .tipo{
+.cartao-lanche .tipo{
     font-size: 12px;
     background-color: #fff;
     opacity: 0.7;
@@ -23,23 +22,23 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.cardapio-opcoes .detalhes{
+.cartao-lanche .detalhes{
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.cardapio-opcoes .cartao-imagem{
+.cartao-lanche .cartao-imagem{
     width: 250px;
     height: 250px;
 }
 
-.cardapio-opcoes img{
+.cartao-lanche img{
     max-height: 100%;
 }
 
-.cartao-pokemon.aberto{
+.cartao-lanche .aberto{
     display: block;
 }
 
