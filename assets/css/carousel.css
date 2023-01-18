@@ -1,3 +1,13 @@
 .carousel {
     display: flex;
 }
+
+.cartao-wrapper {
+    display: flex;
+    overflow-x: auto;
+    flex-flow: row nowrap;
+}
+
+.cartao-lanche {
+    flex-shrink: 0;
+}
