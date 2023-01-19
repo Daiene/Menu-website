@@ -1,5 +1,7 @@
 .cartao-lanche {
     width: 480px;
+    box-shadow: rgba(0,0,0, 0.5) 0px 7px 20px 0px;
+    border-radius: 10px;
 }
 
 .cartao-lanche .cartao-topo{
@@ -7,7 +9,7 @@
 }
 
 .cartao-lanche .name{
-    margin-bottom: 5px;
+    margin-bottom: 13px;
 }
 
 .cartao-lanche .tipo{
@@ -16,7 +18,8 @@
     opacity: 0.7;
     border-radius: 10px;
     padding: 2px 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-weight: bold;
+    box-shadow: rgba(0,0,0, 0.5) 0px 7px 15px 0px;
 }
 
 .cartao-lanche .detalhes{
