@@ -19,7 +19,7 @@
     border-radius: 10px;
     padding: 2px 10px;
     font-weight: bold;
-    box-shadow: rgba(0,0,0, 0.5) 0px 7px 15px 0px;
+    box-shadow: 4px -4px 1em rgb(92, 88, 88);
 }
 
 .cartao-lanche .detalhes{
