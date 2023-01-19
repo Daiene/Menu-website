@@ -1,7 +1,7 @@
 .carousel {
     display: flex;
     width: 510px;
-    height: 750px;
+    height: 770px;
     padding-bottom: 30px;
 }
 
@@ -23,7 +23,8 @@
     font-size: 35px;
     margin: 15px;
     left: 370px;
-    line-height: 420px;
+    margin-top: 340px;
+    margin-left: 40px;
     background: transparent;
     color: rgba(0, 0, 0, 0.5);
     border: none;
@@ -38,5 +39,5 @@
 }
 
 .arrow-right {
-    left: 810px;
+    left: 760px;
 }

@@ -41,6 +41,51 @@
     max-width: 100%;
 }
 
+.cartao-lanche .cartao-informacoes {
+    background-color: #fff;
+    padding: 80px 30px 31px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cartao-lanche .cartao-informacoes .titulo-valor {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: -40px;
+    padding: 10px 0 20px 0;
+}
+
+.cartao-lanche .cartao-informacoes .descricao-do-lanche {
+    text-align: justify;
+    padding-top: 8px;
+    font-size: 13px;
+}
+
+.cartao-lanche .coluna-de-informacoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px 0 70px;
+}
+
+.cartao-lanche .coluna-de-informacoes .quantidade-valor h3, .adicionais h3 {
+    padding-bottom: 10px;
+}
+
+.cartao-lanche .combobox-texto, .opcoes-adicionais {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.cartao-lanche .combobox-texto #number-value {
+    width: 50px;
+}
+
+.cartao-lanche .combobox-texto p {
+    display: inline;
+}
+
 .cardapio-opcoes.aberto{
     display: block;
 }
