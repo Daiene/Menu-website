@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Fredoka+One&display=swap');
+
 .opcoes {
     max-width: 200px;
+    font-family: 'Fredoka One', cursive;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .opcoes .botao {
@@ -8,7 +12,6 @@
     justify-content: space-between;
     margin-bottom: 15px;
     background-color: #b7c5be;
-    color: black;
     padding: 0 5px;
     cursor: pointer;
     border-top-left-radius: 30px;
@@ -19,19 +22,31 @@
 }
 
 .opcoes .botao:hover { 
-    transform: scale(1.25);
+    color: rgba(0, 0, 0);
+    transform: scale(1.10);
+    opacity: 1;
+}
+
+.opcoes .botao:hover img {
+    opacity: 1;
 }
 
 .opcoes .botao img {
     width: 40%;
     border-radius: 50%;
+    opacity: 0.6;
 }
 
 .opcoes .botao span {
     padding-right: 20px;
-    font-weight: bold;
 }
 
 .opcoes .botao.ativo {
+    transform: scale(1.20);
+    color: rgba(0, 0, 0);
     background-color: #FA6668;
+}
+
+.opcoes .botao.ativo img {
+    opacity: 1;
 }
