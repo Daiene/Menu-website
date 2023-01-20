@@ -127,10 +127,6 @@
     transform: scale(1.2);
 }
 
-.cardapio-opcoes.aberto{
-    display: block;
-}
-
 .cor-salada {
     background-color: #FCC719;
 }

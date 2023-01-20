@@ -1,24 +1,24 @@
-const listaSelecao = document.querySelectorAll('.botao');
-const cardapioOpcoes = document.querySelectorAll('.cardapio-opcoes');
+const listaSelecaoBotoes = document.querySelectorAll(".botao");
+const carrosselPrincipal = document.querySelectorAll(".carousel");
 
-listaSelecao.forEach(botao => {
-    botao.addEventListener('click', (e) => {
+listaSelecaoBotoes.forEach((botao) => {
+    botao.addEventListener("click", (e) => {
         e.preventDefault();
 
-        const cartaoAberto = document.querySelector('.aberto');
-        cartaoAberto.classList.remove('aberto');
+        const carrosselPrincipalAberto = document.querySelector(".aberto");
+        carrosselPrincipalAberto.classList.remove("aberto");
 
-        const idCartaoSelecionado = botao.attributes.id.value;
+        const idLancheSelecionado = botao.attributes.id.value;
 
-        const idDoCartaoParaAbrir = 'carousel-' + idCartaoSelecionado;
+        const idDoCarrosselParaAbrir = "carousel-" + idLancheSelecionado;
 
-        const cartaoParaAbrir = document.getElementById(idDoCartaoParaAbrir);
-        cartaoParaAbrir.classList.add('aberto');
+        const CarrosselParaAbrir = document.getElementById(idDoCarrosselParaAbrir);
+        CarrosselParaAbrir.classList.add("aberto");
 
-        const lancheAtivoNasOpces = document.querySelectorAll('.ativo');
-        lancheAtivoNasOpces.classList.remove('ativo');
+        const lancheAtivoNasOpcoes = document.querySelector (".ativo");
+        lancheAtivoNasOpcoes.classList.remove("ativo");
 
-        const lancheSelecionadoNasOpcoes = document.getElementById(idCartaoSelecionado);
-        lancheSelecionadoNasOpcoes.classList.add('ativo');
+        const lancheSelecionadoNasOpcoes = document.getElementById(idLancheSelecionado);
+        lancheSelecionadoNasOpcoes.classList.add("ativo");
     })
 })

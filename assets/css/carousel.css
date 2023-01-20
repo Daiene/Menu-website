@@ -5,6 +5,11 @@
     padding-bottom: 30px;
 }
 
+.carousel.aberto{
+    display: block;
+}
+
+
 .cartao-wrapper {
     display: flex;
     overflow-x: auto;
