@@ -1,14 +1,11 @@
-.popup-wrapper {
-    display: none;
-    background: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
 }
 
-.popup {
+dialog {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgba(0,0,0,0.3);
     font-family: 'Lato', sans-serif;
     text-align: center;
     width: 90%;
@@ -17,19 +14,25 @@
     left: 50%;
     transform: translate(-83%, -88%);
     padding: 30px;
-    background: white;
-    position: relative;
-    border-radius: 10px;
 }
 
-.popup-content h2 {
+.modal-close {
+    position: absolute;
+    font-weight: bold;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.modal-content h2 {
     margin-bottom: 10px;
     margin-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(88, 86, 86, 0.5);
 }
 
-.popup-content p {
+.modal-content p {
     font-size: 13px;
     align-items: justify;
 }
@@ -39,7 +42,7 @@
     margin-bottom: 20px;
 }
 
-.popup a {
+.modal-content a {
     display: inline-block;
     margin-bottom: 20px;
     color: white;
@@ -52,15 +55,6 @@
     box-shadow: 4px -4px 1em rgb(92, 88, 88, 0.8);
 }
 
-.popup a:hover {
+.modal-content a:hover {
     transform: scale(1.05);
-}
-
-.popup-close {
-    position: absolute;
-    font-weight: bold;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 25px;
 }

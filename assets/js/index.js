@@ -3,25 +3,25 @@ const listaSelecaoBotoes = document.querySelectorAll(".botao");
 const carrosselPrincipal = document.querySelectorAll(".carousel");
 
 listaSelecaoBotoes.forEach((botao) => {
-    botao.addEventListener("click", (e) => {
-        e.preventDefault();
+  botao.addEventListener("click", (e) => {
+    e.preventDefault();
 
-        const carrosselPrincipalAberto = document.querySelector(".aberto");
-        carrosselPrincipalAberto.classList.remove("aberto");
+    const carrosselPrincipalAberto = document.querySelector(".aberto");
+    carrosselPrincipalAberto.classList.remove("aberto");
 
-        const idLancheSelecionado = botao.attributes.id.value;
+    const idLancheSelecionado = botao.attributes.id.value;
 
-        const idDoCarrosselParaAbrir = "carousel-" + idLancheSelecionado;
+    const idDoCarrosselParaAbrir = "carousel-" + idLancheSelecionado;
 
-        const CarrosselParaAbrir = document.getElementById(idDoCarrosselParaAbrir);
-        CarrosselParaAbrir.classList.add("aberto");
+    const CarrosselParaAbrir = document.getElementById(idDoCarrosselParaAbrir);
+    CarrosselParaAbrir.classList.add("aberto");
 
-        const lancheAtivoNasOpcoes = document.querySelector (".ativo");
-        lancheAtivoNasOpcoes.classList.remove("ativo");
+    const lancheAtivoNasOpcoes = document.querySelector(".ativo");
+    lancheAtivoNasOpcoes.classList.remove("ativo");
 
-        const lancheSelecionadoNasOpcoes = document.getElementById(idLancheSelecionado);
-        lancheSelecionadoNasOpcoes.classList.add("ativo");
-    })
+    const lancheSelecionadoNasOpcoes = document.getElementById(idLancheSelecionado);
+    lancheSelecionadoNasOpcoes.classList.add("ativo");
+  })
 })
 
 //Funcionamento de cada carrossel
@@ -54,10 +54,10 @@ controls.forEach((control) => {
       if (currentItem >= maxXSalada) {
         currentItem = 0;
       }
-    
+
       if (currentItem < 0) {
         currentItem = 1;
-      }   
+      }
     }
 
     if (idValueDoCardASerExibido === "cartao-x-bacon") {
@@ -65,10 +65,10 @@ controls.forEach((control) => {
       if (currentItem >= maxBacon) {
         currentItem = 0;
       }
-    
+
       if (currentItem < 0) {
         currentItem = 1;
-      }   
+      }
     }
 
     if (idValueDoCardASerExibido === "cartao-x-frango") {
@@ -76,10 +76,10 @@ controls.forEach((control) => {
       if (currentItem >= maxFrango) {
         currentItem = 0;
       }
-    
+
       if (currentItem < 0) {
         currentItem = 1;
-      }   
+      }
     }
 
     if (idValueDoCardASerExibido === "cartao-x-tudo") {
@@ -87,10 +87,10 @@ controls.forEach((control) => {
       if (currentItem >= maxTudo) {
         currentItem = 0;
       }
-    
+
       if (currentItem < 0) {
         currentItem = 1;
-      }   
+      }
     }
 
 
@@ -104,7 +104,7 @@ controls.forEach((control) => {
 
     xSalada[currentItem].classList.add("current-item");
 
-    
+
     //Para rolar entre um item e outro do carrossel do x-bacon
     xBacon.forEach((item) => item.classList.remove("current-item"));
 
@@ -141,15 +141,15 @@ controls.forEach((control) => {
 });
 
 //Código de uma calculadora para aumentar o valor conforme cada adicional escolhido
-function resgataValor () {
+function resgataValor() {
   const valorInput = document.getElementById("number-value-salada");
   const value = valorInput.valueAsNumber;
 
-  function transformaEmNumero () {
+  function transformaEmNumero() {
     const valorDoAdicional = document.querySelectorAll(".valor-do-adicional");
     const valueAdicional = valorDoAdicional.valueAsNumber;
-  
-    const multiplicacao =  valueAdicional * value;
+
+    const multiplicacao = valueAdicional * value;
 
     console.log(multiplicacao);
   }
@@ -179,26 +179,21 @@ btnXTudo.addEventListener("click", function () {
 })
 
 //Carregar popup
-const buttonComprarSalada = document.querySelector(".comprar-salada");
-const buttonComprarSaladaFritas = document.querySelector(".comprar-salada-fritas");
-const popup = document.querySelector(".popup-wrapper");
+const buttonComprar = document.querySelector(".comprar");
+const modal = document.querySelector("dialog");
+const closeModal = document.querySelector(".modal-close");
+const continueComprando = document.querySelector(".modal-link");
 
-buttonComprarSalada.addEventListener('click', () => {
-  popup.style.display = 'block';
-})
+buttonComprar.onclick = function () {
+  modal.showModal();
+}
 
-buttonComprarSaladaFritas.addEventListener('click', () => {
-  popup.style.display = 'block';
-})
-
-popup.addEventListener('click', event => {
+modal.addEventListener('click', event => {
   const nomeDaClasseDoElementoClicado = event.target.classList[0];
-  const classNames = ['popup-close', 'popup-wrapper', 'popup-link'];
-  const DeveFecharPopup = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+  const classNames = ['modal-close', 'modal-link'];
+  const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
 
-  if (DeveFecharPopup) {
-    popup.style.display = 'none';
+  if (DeveFecharModal) {
+    modal.close();
   }
-
-  
 })

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="assets/css/cardapio.css">
     <link rel="stylesheet" href="assets/css/opcoes.css">
     <link rel="stylesheet" href="assets/css/global.css">
@@ -17,6 +18,7 @@
 
     <title>Cardápio</title>
 </head>
+
 <body>
     <main>
         <div class="global">
@@ -39,7 +41,8 @@
                             <div class="cartao-informacoes">
                                 <p class="titulo-valor">R$ <span>23,95</span></p>
                                 <h3>Ingredientes</h3>
-                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, alface, tomate, cebola, picles, ketchup e maionese.</p>
+                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, alface,
+                                    tomate, cebola, picles, ketchup e maionese.</p>
                                 <div class="coluna-de-informacoes">
                                     <div class="adicionais">
                                         <h4>Adicionais</h4>
@@ -57,31 +60,37 @@
                                         <h4>Quant.</h4>
                                         <ul>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-salada" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-salada"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-salada" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-salada"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-salada" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-salada"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-salada" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-salada"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-salada" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-salada"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-salada" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-salada"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                         </ul>
-                                        
+
                                     </div>
 
                                     <div class="quantidade-valor">
                                         <h4>Preço (cada)</h4>
                                         <ul>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">3</span>,00</p>
                                             </li>
                                             <li class="combobox-texto">
@@ -92,11 +101,11 @@
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
@@ -107,20 +116,19 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="comprar comprar-salada cor-salada">Comprar</button>
-                                <div class="popup-wrapper">
-                                    <div class="popup">
+                                <button class="comprar cor-salada">Comprar</button>
+                                <dialog>
+                                    <div class="modal-close">x</div>
 
-                                        <div class="popup-close">x</div>
-
-                                        <div class="popup-content">
-                                            <h2>Observações</h2>
-                                            <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação? Descreva abaixo.</p>
-                                            <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35" rows="4"></textarea>
-                                            <a class="popup-link" href="#">Continue Comprando</a>
-                                        </div>
+                                    <div class="modal-content">
+                                        <h2>Observações</h2>
+                                        <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação?
+                                            Descreva abaixo.</p>
+                                        <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35"
+                                            rows="4"></textarea>
+                                        <a class="modal-link" href="#">Continue Comprando</a>
                                     </div>
-                                </div>
+                                </dialog>
                             </div>
                         </div>
 
@@ -132,14 +140,16 @@
                                 </div>
                                 <span class="tipo">lanches</span>
                                 <div class="cartao-imagem">
-                                    <img src="assets/img/lanches/x-salada com batata.png" alt="X-Salada com batata frita">
+                                    <img src="assets/img/lanches/x-salada com batata.png"
+                                        alt="X-Salada com batata frita">
                                 </div>
                             </div>
 
                             <div class="cartao-informacoes">
                                 <p class="titulo-valor">R$ <span>27,95</span></p>
                                 <h3>Ingredientes</h3>
-                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, alface, tomate, cebola, picles, ketchup e maionese + 180g de fritas.</p>
+                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, alface,
+                                    tomate, cebola, picles, ketchup e maionese + 180g de fritas.</p>
                                 <div class="coluna-de-informacoes">
                                     <div class="adicionais">
                                         <h4>Adicionais</h4>
@@ -157,31 +167,37 @@
                                         <h4>Quant.</h4>
                                         <ul>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-saladaEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                         </ul>
-                                        
+
                                     </div>
 
                                     <div class="quantidade-valor">
                                         <h4>Preço (cada)</h4>
                                         <ul>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">3</span>,00</p>
                                             </li>
                                             <li class="combobox-texto">
@@ -192,11 +208,11 @@
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
@@ -207,20 +223,19 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="comprar comprar-salada-fritas cor-salada">Comprar</button>
-                                <div class="popup-wrapper">
-                                    <div class="popup">
+                                <button class="comprar cor-salada">Comprar</button>
+                                <dialog>
+                                    <div class="modal-close">x</div>
 
-                                        <div class="popup-close">x</div>
-
-                                        <div class="popup-content">
-                                            <h2>Observações</h2>
-                                            <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação? Descreva abaixo.</p>
-                                            <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35" rows="4"></textarea>
-                                            <a class="popup-link" href="#">Continue Comprando</a>
-                                        </div>
+                                    <div class="modal-content">
+                                        <h2>Observações</h2>
+                                        <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação?
+                                            Descreva abaixo.</p>
+                                        <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35"
+                                            rows="4"></textarea>
+                                        <a class="modal-link" href="#">Continue Comprando</a>
                                     </div>
-                                </div>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -245,7 +260,8 @@
                             <div class="cartao-informacoes">
                                 <p class="titulo-valor">R$ <span>23,95</span></p>
                                 <h3>Ingredientes</h3>
-                                <p class="descricao-do-lanche">Pão de sal redondo, hambúrguer, queijo, bacon, alface, tomate, cebola e maionese.</p>
+                                <p class="descricao-do-lanche">Pão de sal redondo, hambúrguer, queijo, bacon, alface,
+                                    tomate, cebola e maionese.</p>
                                 <div class="coluna-de-informacoes">
                                     <div class="adicionais">
                                         <h4>Adicionais</h4>
@@ -263,31 +279,37 @@
                                         <h4>Quant.</h4>
                                         <ul>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                         </ul>
-                                        
+
                                     </div>
 
                                     <div class="quantidade-valor">
                                         <h4>Preço (cada)</h4>
                                         <ul>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">3</span>,00</p>
                                             </li>
                                             <li class="combobox-texto">
@@ -298,11 +320,11 @@
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
@@ -313,20 +335,19 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="comprar comprar-bacon cor-bacon">Comprar</button>
-                                <div class="popup-wrapper">
-                                    <div class="popup">
+                                <button class="comprar cor-bacon">Comprar</button>
+                                <dialog>
+                                    <div class="modal-close">x</div>
 
-                                        <div class="popup-close">x</div>
-
-                                        <div class="popup-content">
-                                            <h2>Observações</h2>
-                                            <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação? Descreva abaixo.</p>
-                                            <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35" rows="4"></textarea>
-                                            <a class="popup-link" href="#">Continue Comprando</a>
-                                        </div>
+                                    <div class="modal-content">
+                                        <h2>Observações</h2>
+                                        <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação?
+                                            Descreva abaixo.</p>
+                                        <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35"
+                                            rows="4"></textarea>
+                                        <a class="modal-link" href="#">Continue Comprando</a>
                                     </div>
-                                </div>
+                                </dialog>
                             </div>
                         </div>
 
@@ -345,7 +366,8 @@
                             <div class="cartao-informacoes">
                                 <p class="titulo-valor">R$ <span>27,95</span></p>
                                 <h3>Ingredientes</h3>
-                                <p class="descricao-do-lanche">Pão de sal redondo, hambúrguer, queijo, bacon, alface, tomate, cebola e maionese + 180g de fritas.</p>
+                                <p class="descricao-do-lanche">Pão de sal redondo, hambúrguer, queijo, bacon, alface,
+                                    tomate, cebola e maionese + 180g de fritas.</p>
                                 <div class="coluna-de-informacoes">
                                     <div class="adicionais">
                                         <h4>Adicionais</h4>
@@ -363,31 +385,37 @@
                                         <h4>Quant.</h4>
                                         <ul>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                         </ul>
-                                        
+
                                     </div>
 
                                     <div class="quantidade-valor">
                                         <h4>Preço (cada)</h4>
                                         <ul>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">3</span>,00</p>
                                             </li>
                                             <li class="combobox-texto">
@@ -398,11 +426,11 @@
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
@@ -413,25 +441,24 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="comprar comprar-bacon-fritas cor-bacon">Comprar</button>
-                                <div class="popup-wrapper">
-                                    <div class="popup">
+                                <button class="comprar cor-bacon">Comprar</button>
+                                <dialog>
+                                    <div class="modal-close">x</div>
 
-                                        <div class="popup-close">x</div>
-
-                                        <div class="popup-content">
-                                            <h2>Observações</h2>
-                                            <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação? Descreva abaixo.</p>
-                                            <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35" rows="4"></textarea>
-                                            <a class="popup-link" href="#">Continue Comprando</a>
-                                        </div>
+                                    <div class="modal-content">
+                                        <h2>Observações</h2>
+                                        <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação?
+                                            Descreva abaixo.</p>
+                                        <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35"
+                                            rows="4"></textarea>
+                                        <a class="modal-link" href="#">Continue Comprando</a>
                                     </div>
-                                </div>
+                                </dialog>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
 
                 <div class="carousel" id="carousel-x-frango">
                     <button class="arrow-left control" aria-label="Previous image">➤</button>
@@ -452,7 +479,8 @@
                             <div class="cartao-informacoes">
                                 <p class="titulo-valor">R$ <span>23,95</span></p>
                                 <h3>Ingredientes</h3>
-                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin , filé de frango, queijo, alface, tomate e maionese.</p>
+                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin , filé de frango, queijo,
+                                    alface, tomate e maionese.</p>
                                 <div class="coluna-de-informacoes">
                                     <div class="adicionais">
                                         <h4>Adicionais</h4>
@@ -470,31 +498,37 @@
                                         <h4>Quant.</h4>
                                         <ul>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frango"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frango"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frango"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frango"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frango"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frango"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                         </ul>
-                                        
+
                                     </div>
 
                                     <div class="quantidade-valor">
                                         <h4>Preço (cada)</h4>
                                         <ul>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">3</span>,00</p>
                                             </li>
                                             <li class="combobox-texto">
@@ -505,11 +539,11 @@
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
@@ -520,20 +554,19 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="comprar comprar-frango cor-frango">Comprar</button>
-                                <div class="popup-wrapper">
-                                    <div class="popup">
+                                <button class="comprar cor-frango">Comprar</button>
+                                <dialog>
+                                    <div class="modal-close">x</div>
 
-                                        <div class="popup-close">x</div>
-
-                                        <div class="popup-content">
-                                            <h2>Observações</h2>
-                                            <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação? Descreva abaixo.</p>
-                                            <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35" rows="4"></textarea>
-                                            <a class="popup-link" href="#">Continue Comprando</a>
-                                        </div>
+                                    <div class="modal-content">
+                                        <h2>Observações</h2>
+                                        <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação?
+                                            Descreva abaixo.</p>
+                                        <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35"
+                                            rows="4"></textarea>
+                                        <a class="modal-link" href="#">Continue Comprando</a>
                                     </div>
-                                </div>
+                                </dialog>
                             </div>
                         </div>
 
@@ -545,14 +578,16 @@
                                 </div>
                                 <span class="tipo">lanches</span>
                                 <div class="cartao-imagem">
-                                    <img src="assets/img/lanches/x-frango com batata.png" alt="X-Frango com batata frita">
+                                    <img src="assets/img/lanches/x-frango com batata.png"
+                                        alt="X-Frango com batata frita">
                                 </div>
                             </div>
 
                             <div class="cartao-informacoes">
                                 <p class="titulo-valor">R$ <span>27,95</span></p>
                                 <h3>Ingredientes</h3>
-                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin , filé de frango, queijo, alface, tomate e maionese + 180g de fritas.</p>
+                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin , filé de frango, queijo,
+                                    alface, tomate e maionese + 180g de fritas.</p>
                                 <div class="coluna-de-informacoes">
                                     <div class="adicionais">
                                         <h4>Adicionais</h4>
@@ -570,31 +605,37 @@
                                         <h4>Quant.</h4>
                                         <ul>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                         </ul>
-                                        
+
                                     </div>
 
                                     <div class="quantidade-valor">
                                         <h4>Preço (cada)</h4>
                                         <ul>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">3</span>,00</p>
                                             </li>
                                             <li class="combobox-texto">
@@ -605,11 +646,11 @@
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
@@ -620,20 +661,19 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="comprar comprar-frango-fritas cor-frango">Comprar</button>
-                                <div class="popup-wrapper">
-                                    <div class="popup">
+                                <button class="comprar cor-frango">Comprar</button>
+                                <dialog>
+                                    <div class="modal-close">x</div>
 
-                                        <div class="popup-close">x</div>
-
-                                        <div class="popup-content">
-                                            <h2>Observações</h2>
-                                            <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação? Descreva abaixo.</p>
-                                            <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35" rows="4"></textarea>
-                                            <a class="popup-link" href="#">Continue Comprando</a>
-                                        </div>
+                                    <div class="modal-content">
+                                        <h2>Observações</h2>
+                                        <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação?
+                                            Descreva abaixo.</p>
+                                        <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35"
+                                            rows="4"></textarea>
+                                        <a class="modal-link" href="#">Continue Comprando</a>
                                     </div>
-                                </div>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -659,7 +699,8 @@
                             <div class="cartao-informacoes">
                                 <p class="titulo-valor">R$ <span>29,50</span></p>
                                 <h3>Ingredientes</h3>
-                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, filé de frango, queijo, bacon, alface, tomate, cebola, ketchup e maionese.</p>
+                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, filé de
+                                    frango, queijo, bacon, alface, tomate, cebola, ketchup e maionese.</p>
                                 <div class="coluna-de-informacoes">
                                     <div class="adicionais">
                                         <h4>Adicionais</h4>
@@ -677,31 +718,37 @@
                                         <h4>Quant.</h4>
                                         <ul>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
+                                                        value="" min="1" max="3"></a>
                                             </li>
                                         </ul>
-                                        
+
                                     </div>
 
                                     <div class="quantidade-valor">
                                         <h4>Preço (cada)</h4>
                                         <ul>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">3</span>,00</p>
                                             </li>
                                             <li class="combobox-texto">
@@ -712,11 +759,11 @@
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
@@ -727,20 +774,19 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="comprar comprar-tudo cor-tudo">Comprar</button>
-                                <div class="popup-wrapper">
-                                    <div class="popup">
+                                <button class="comprar cor-tudo">Comprar</button>
+                                <dialog>
+                                    <div class="modal-close">x</div>
 
-                                        <div class="popup-close">x</div>
-
-                                        <div class="popup-content">
-                                            <h2>Observações</h2>
-                                            <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação? Descreva abaixo.</p>
-                                            <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35" rows="4"></textarea>
-                                            <a class="popup-link" href="#">Continue Comprando</a>
-                                        </div>
+                                    <div class="modal-content">
+                                        <h2>Observações</h2>
+                                        <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação?
+                                            Descreva abaixo.</p>
+                                        <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35"
+                                            rows="4"></textarea>
+                                        <a class="modal-link" href="#">Continue Comprando</a>
                                     </div>
-                                </div>
+                                </dialog>
                             </div>
                         </div>
 
@@ -759,7 +805,9 @@
                             <div class="cartao-informacoes">
                                 <p class="titulo-valor">R$ <span>33,50</span></p>
                                 <h3>Ingredientes</h3>
-                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, filé de frango, queijo, bacon, alface, tomate, cebola, ketchup e maionese + 180g de fritas.</p>
+                                <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, filé de
+                                    frango, queijo, bacon, alface, tomate, cebola, ketchup e maionese + 180g de fritas.
+                                </p>
                                 <div class="coluna-de-informacoes">
                                     <div class="adicionais">
                                         <h4>Adicionais</h4>
@@ -777,31 +825,37 @@
                                         <h4>Quant.</h4>
                                         <ul>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                             <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata" type="number" value="" min="1" max="3"></a>
+                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
+                                                        type="number" value="" min="1" max="3"></a>
                                             </li>
                                         </ul>
-                                        
+
                                     </div>
 
                                     <div class="quantidade-valor">
                                         <h4>Preço (cada)</h4>
                                         <ul>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">3</span>,00</p>
                                             </li>
                                             <li class="combobox-texto">
@@ -812,11 +866,11 @@
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
-                                            <li class="combobox-texto"> 
+                                            <li class="combobox-texto">
                                                 <p>R$ <span class="valor-do-adicional">2</span>,00</p>
                                                 </select>
                                             </li>
@@ -827,26 +881,25 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <button class="comprar comprar-tudo-fritas cor-tudo">Comprar</button>
-                                <div class="popup-wrapper">
-                                    <div class="popup">
+                                <button class="comprar cor-tudo">Comprar</button>
+                                <dialog>
+                                    <div class="modal-close">x</div>
 
-                                        <div class="popup-close">x</div>
-
-                                        <div class="popup-content">
-                                            <h2>Observações</h2>
-                                            <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação? Descreva abaixo.</p>
-                                            <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35" rows="4"></textarea>
-                                            <a class="popup-link" href="#">Continue Comprando</a>
-                                        </div>
+                                    <div class="modal-content">
+                                        <h2>Observações</h2>
+                                        <p>Deseja remover algum ingrediente do seu pedido ou fazer alguma observação?
+                                            Descreva abaixo.</p>
+                                        <textarea name="observacaoDoPedido" id="observacaoDoPedido" cols="35"
+                                            rows="4"></textarea>
+                                        <a class="modal-link" href="#">Continue Comprando</a>
                                     </div>
-                                </div>
+                                </dialog>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             <nav class="opcoes">
                 <ul>
                     <li class="botao ativo" id="x-salada">
@@ -871,8 +924,9 @@
                 </ul>
             </nav>
         </div>
-        
+
     </main>
-    
+
 </body>
+
 </html>
