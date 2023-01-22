@@ -48,6 +48,11 @@
         margin-bottom: 5px;
     }
 
+    .cartao-lanche .coluna-de-informacoes .combobox {
+        width: 100%;
+        height: 100%;
+    }
+
     .carousel .cartao-informacoes .coluna-de-informacoes h4 {
         margin-top: 15px;
         font-size: 13px;
