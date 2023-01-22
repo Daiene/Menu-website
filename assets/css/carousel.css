@@ -34,10 +34,9 @@
     position: absolute;
     cursor: pointer;
     font-size: 35px;
-    top: 0;
-    left: 70px;
+    top: 335px;
+    left: 90px;
     right: auto;
-    bottom: 73px;
     background: transparent;
     color: rgba(0, 0, 0, 0.5);
     border: none;
@@ -53,5 +52,5 @@
 
 .arrow-right {
     left: auto;
-    right: 70px;
+    right: 90px;
 }
