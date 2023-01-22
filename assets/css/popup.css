@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
-
-.popup-wrapper-salada {
+.popup-wrapper {
     display: none;
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -11,32 +8,38 @@
     height: 100%;
 }
 
-.popup-salada {
-    font-family: arial;
+.popup {
+    font-family: 'Lato', sans-serif;
     text-align: center;
-    width: 100%;
+    width: 90%;
     max-width: 350px;
-    margin: 10% auto;
-    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-83%, -88%);
+    padding: 30px;
     background: white;
     position: relative;
     border-radius: 10px;
 }
 
-.popup-content-salada h2 {
+.popup-content h2 {
     margin-bottom: 10px;
     margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(88, 86, 86, 0.5);
 }
 
-.popup-content-salada p {
-    text-align: justify;
+.popup-content p {
+    font-size: 13px;
+    align-items: justify;
 }
 
-#observacaoDoPedido-salada {
-    margin: 20px;
+#observacaoDoPedido {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.popup-salada a {
+.popup a {
     display: inline-block;
     margin-bottom: 20px;
     color: white;
@@ -44,17 +47,18 @@
     cursor: pointer;
     padding: 6px 10px;
     text-decoration: none;
-    background: crimson;
+    background: rgb(110, 108, 109);
     border-radius: 5px;
     box-shadow: 4px -4px 1em rgb(92, 88, 88, 0.8);
 }
 
-.popup-salada a:hover {
+.popup a:hover {
     transform: scale(1.05);
 }
 
-.popup-close-salada {
+.popup-close {
     position: absolute;
+    font-weight: bold;
     top: 5px;
     right: 10px;
     cursor: pointer;

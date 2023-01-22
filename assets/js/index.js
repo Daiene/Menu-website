@@ -179,20 +179,25 @@ btnXTudo.addEventListener("click", function () {
 })
 
 //Carregar popup
-const buttonComprar = document.querySelector(".comprar");
-const popupSalada = document.querySelector(".popup-wrapper-salada");
+const buttonComprarSalada = document.querySelector(".comprar-salada");
+const buttonComprarSaladaFritas = document.querySelector(".comprar-salada-fritas");
+const popup = document.querySelector(".popup-wrapper");
 
-buttonComprar.addEventListener('click', () => {
-  popupSalada.style.display = 'block';
+buttonComprarSalada.addEventListener('click', () => {
+  popup.style.display = 'block';
 })
 
-popupSalada.addEventListener('click', event => {
+buttonComprarSaladaFritas.addEventListener('click', () => {
+  popup.style.display = 'block';
+})
+
+popup.addEventListener('click', event => {
   const nomeDaClasseDoElementoClicado = event.target.classList[0];
-  const classNames = ['popup-close-salada', 'popup-wrapper-salada', 'popup-link'];
+  const classNames = ['popup-close', 'popup-wrapper', 'popup-link'];
   const DeveFecharPopup = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
 
   if (DeveFecharPopup) {
-    popupSalada.style.display = 'none';
+    popup.style.display = 'none';
   }
 
   
