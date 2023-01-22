@@ -106,9 +106,6 @@
     padding-bottom: 3px;
 }
 
-.cartao-lanche .combobox-texto, .combobox #number-value {
-    width: 50px;
-}
 
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1;

@@ -1,3 +1,4 @@
+//Mostrar um elemento de cada vez conforme seu respectivo botão selecionado
 const listaSelecaoBotoes = document.querySelectorAll(".botao");
 const carrosselPrincipal = document.querySelectorAll(".carousel");
 
@@ -23,7 +24,7 @@ listaSelecaoBotoes.forEach((botao) => {
     })
 })
 
-
+//Funcionamento de cada carrossel
 const controls = document.querySelectorAll(".control");
 const xSalada = document.querySelectorAll("#cartao-x-salada");
 const xBacon = document.querySelectorAll("#cartao-x-bacon");
@@ -138,3 +139,20 @@ controls.forEach((control) => {
 
   });
 });
+
+//Código de uma calculadora para aumentar o valor conforme cada adicional escolhido
+function resgataValor () {
+  const valorInput = document.getElementById("number-value-salada");
+  const value = valorInput.valueAsNumber;
+
+  function transformaEmNumero () {
+    const valorDoAdicional = document.querySelectorAll(".valor-do-adicional");
+    const valueAdicional = valorDoAdicional.valueAsNumber;
+  
+    const multiplicacao =  valueAdicional * value;
+
+    console.log(multiplicacao);
+  }
+
+}
+
