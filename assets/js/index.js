@@ -179,21 +179,136 @@ btnXTudo.addEventListener("click", function () {
 })
 
 //Carregar popup
-const buttonComprar = document.querySelector(".comprar");
-const modal = document.querySelector("dialog");
+const buttonComprarSalada = document.getElementById("comprar-salada");
+const buttonComprarSaladaFritas = document.getElementById("comprar-salada-fritas");
+const buttonComprarBacon = document.getElementById("comprar-bacon");
+const buttonComprarBaconFritas = document.getElementById("comprar-bacon-fritas");
+const buttonComprarFrango = document.getElementById("comprar-frango");
+const buttonComprarFrangoFritas = document.getElementById("comprar-frango-fritas");
+const buttonComprarTudo = document.getElementById("comprar-tudo");
+const buttonComprarTudoFritas = document.getElementById("comprar-tudo-fritas");
+
+const modalSalada = document.getElementById("dialog-salada");
+const modalSaladaFritas = document.getElementById("dialog-salada-fritas");
+const modalBacon = document.getElementById("dialog-bacon");
+const modalBaconFritas = document.getElementById("dialog-bacon-fritas");
+const modalFrango = document.getElementById("dialog-frango");
+const modalFrangoFritas = document.getElementById("dialog-frango-fritas");
+const modalTudo = document.getElementById("dialog-tudo");
+const modalTudoFritas = document.getElementById("dialog-tudo-fritas");
+
+
 const closeModal = document.querySelector(".modal-close");
 const continueComprando = document.querySelector(".modal-link");
 
-buttonComprar.onclick = function () {
-  modal.showModal();
+buttonComprarSalada.onclick = function () {
+  modalSalada.showModal();
 }
 
-modal.addEventListener('click', event => {
+buttonComprarSaladaFritas.onclick = function () {
+  modalSaladaFritas.showModal();
+}
+
+buttonComprarBacon.onclick = function () {
+  modalBacon.showModal();
+}
+
+buttonComprarBaconFritas.onclick = function () {
+  modalBaconFritas.showModal();
+}
+
+buttonComprarFrango.onclick = function () {
+  modalFrango.showModal();
+}
+
+buttonComprarFrangoFritas.onclick = function () {
+  modalFrangoFritas.showModal();
+}
+
+buttonComprarTudo.onclick = function () {
+  modalTudo.showModal();
+}
+
+buttonComprarTudoFritas.onclick = function () {
+  modalTudoFritas.showModal();
+}
+
+modalSalada.addEventListener('click', event => {
   const nomeDaClasseDoElementoClicado = event.target.classList[0];
   const classNames = ['modal-close', 'modal-link'];
   const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
 
   if (DeveFecharModal) {
-    modal.close();
+    modalSalada.close();
   }
+})
+
+modalSaladaFritas.addEventListener('click', event => {
+  const nomeDaClasseDoElementoClicado = event.target.classList[0];
+  const classNames = ['modal-close', 'modal-link'];
+  const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+
+  if (DeveFecharModal) {
+    modalSaladaFritas.close();
+  } 
+})
+
+modalBacon.addEventListener('click', event => {
+  const nomeDaClasseDoElementoClicado = event.target.classList[0];
+  const classNames = ['modal-close', 'modal-link'];
+  const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+
+  if (DeveFecharModal) {
+    modalBacon.close();
+  } 
+})
+
+modalBaconFritas.addEventListener('click', event => {
+  const nomeDaClasseDoElementoClicado = event.target.classList[0];
+  const classNames = ['modal-close', 'modal-link'];
+  const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+
+  if (DeveFecharModal) {
+    modalBaconFritas.close();
+  } 
+})
+
+modalFrango.addEventListener('click', event => {
+  const nomeDaClasseDoElementoClicado = event.target.classList[0];
+  const classNames = ['modal-close', 'modal-link'];
+  const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+
+  if (DeveFecharModal) {
+    modalFrango.close();
+  } 
+})
+
+modalFrangoFritas.addEventListener('click', event => {
+  const nomeDaClasseDoElementoClicado = event.target.classList[0];
+  const classNames = ['modal-close', 'modal-link'];
+  const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+
+  if (DeveFecharModal) {
+    modalFrangoFritas.close();
+  } 
+})
+
+modalTudo.addEventListener('click', event => {
+  const nomeDaClasseDoElementoClicado = event.target.classList[0];
+  const classNames = ['modal-close', 'modal-link'];
+  const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+
+  if (DeveFecharModal) {
+    modalTudo.close();
+  } 
+})
+
+modalTudoFritas.addEventListener('click', event => {
+  const nomeDaClasseDoElementoClicado = event.target.classList[0];
+  const classNames = ['modal-close', 'modal-link'];
+  const DeveFecharModal = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+
+  if (DeveFecharModal) {
+    modalTudoFritas.close();
+  } 
 })
