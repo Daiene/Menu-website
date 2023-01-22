@@ -142,17 +142,40 @@ controls.forEach((control) => {
 
 //Código de uma calculadora para aumentar o valor conforme cada adicional escolhido
 function resgataValor() {
-  const valorInput = document.getElementById("number-value-salada");
-  const value = valorInput.valueAsNumber;
+  const inputSaladaHamburg = document.querySelector("#salada-adic-hamburg");
+  /*const inputSaladaFritasHamburg = document.querySelector("#salada-fritas-adic-hamburg");
+  const inputSaladaFrango = document.querySelector(".salada-adic-frango");
+  const inputSaladaBacon = document.querySelector(".salada-adic-bacon");
+  const inputSaladaOvo = document.querySelector(".salada-adic-ovo");
+  const inputSaladaQueijo = document.querySelector(".salada-adic-queijo");
+  const inputSaladaVinagrete = document.querySelector(".salada-adic-vinagrete");*/
+  
 
-  function transformaEmNumero() {
-    const valorDoAdicional = document.querySelectorAll(".valor-do-adicional");
-    const valueAdicional = valorDoAdicional.valueAsNumber;
+  const valueSaladaHamburg = inputSaladaHamburg.valueAsNumber;
+  /*const valueSaladaFritasHamburg = inputSaladaFritasHamburg.valueAsNumber;
+  const valueSaladaFrango = inputSaladaFrango.valueAsNumber;
+  const valueSaladaBacon = inputSaladaBacon.valueAsNumber;
+  const valueSaladaOvo = inputSaladaOvo.valueAsNumber;
+  const valueSaladaQueijo = inputSaladaQueijo.valueAsNumber;
+  const valueSaladaVinagrete = inputSaladaVinagrete.valueAsNumber;*/
 
-    const multiplicacao = valueAdicional * value;
+  const multiplicacaoHamburg = valueSaladaHamburg * 3;
+  /*const multiplicacaoFritasHamburg = valueSaladaFritasHamburg * 3;
+  const multiplicacaoFrango = valueSaladaFrango * 3;
+  const multiplicacaoBacon = valueSaladaBacon * 2;
+  const multiplicacaoOvo = valueSaladaOvo * 2;
+  const multiplicacaoQueijo = valueSaladaQueijo * 2;
+  const multiplicacaoVinagrete = valueSaladaVinagrete * 2;
 
-    console.log(multiplicacao);
-  }
+  let somaSalada = multiplicacaoHamburg + multiplicacaoFrango + multiplicacaoBacon + multiplicacaoOvo + multiplicacaoQueijo + multiplicacaoVinagrete;
+
+  console.log(somaSalada);*/
+
+  const somaFinalSalada = 23.95 + multiplicacaoHamburg;
+  /*const somaFinalSaladaFritas = 27.95 + multiplicacaoFritasHamburg;*/
+
+  document.querySelector(".titulo-valor").innerHTML = "R$ " + somaFinalSalada;
+  /*document.querySelector(".titulo-valor").innerHTML = "R$ " + somaFinalSaladaFritas;*/
 
 }
 
