@@ -1,0 +1,38 @@
+@media (max-width: 750px) {
+    body {
+        font-size: 12px;
+    }
+
+    .global {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .carousel {
+        max-width: 300px;
+    }
+
+    .carousel .cartao-imagem {
+        width: 200px;
+        height: 200px;
+    }
+
+    .carousel .cartao-informacoes {
+        padding: 60px 30px 30px;
+        margin-top: -50px;
+    }
+
+    .carousel .cartao-informacoes .coluna-de-informacoes {
+        display: flex; 
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .carousel .cartao-informacoes .titulo-valor {
+        font-size: 40px;
+    }
+
+    .carousel .cartao-informacoes .coluna-de-informacoes h4 {
+        font-size: 13px;
+    }
+}
