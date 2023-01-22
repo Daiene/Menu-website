@@ -177,3 +177,23 @@ btnXFrango.addEventListener("click", function () {
 btnXTudo.addEventListener("click", function () {
   document.querySelector("body").setAttribute("class", "background-tudo");
 })
+
+//Carregar popup
+const buttonComprar = document.querySelector(".comprar");
+const popupSalada = document.querySelector(".popup-wrapper-salada");
+
+buttonComprar.addEventListener('click', () => {
+  popupSalada.style.display = 'block';
+})
+
+popupSalada.addEventListener('click', event => {
+  const nomeDaClasseDoElementoClicado = event.target.classList[0];
+  const classNames = ['popup-close-salada', 'popup-wrapper-salada', 'popup-link'];
+  const DeveFecharPopup = classNames.some(classNames => classNames === nomeDaClasseDoElementoClicado);
+
+  if (DeveFecharPopup) {
+    popupSalada.style.display = 'none';
+  }
+
+  
+})
