@@ -9,7 +9,7 @@
     }
 
     .carousel {
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .carousel .cartao-imagem {
@@ -18,8 +18,9 @@
     }
 
     .carousel .cartao-informacoes {
+        height: 390px;
         padding: 60px 30px 30px;
-        margin-top: -50px;
+        margin-top: -90px;
     }
 
     .carousel .cartao-informacoes .coluna-de-informacoes {
@@ -29,10 +30,87 @@
     }
 
     .carousel .cartao-informacoes .titulo-valor {
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .carousel .cartao-informacoes .descricao-do-lanche {
+        font-size: 10px;
+    }
+
+    .cartao-lanche .coluna-de-informacoes .quantidade-valor h4, .adicionais h4 {
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .cartao-lanche .coluna-de-informacoes .quantidade h4 {
+        padding-bottom: 5px;
+        text-align: center;
+        margin-bottom: 5px;
     }
 
     .carousel .cartao-informacoes .coluna-de-informacoes h4 {
+        margin-top: 15px;
         font-size: 13px;
+    }
+
+    .carousel .cartao-informacoes .opcoes-adicionais, .carousel .cartao-informacoes .combobox-texto {
+        padding-top: 0;
+        padding-bottom: 7px;
+    }
+
+    .cartao-lanche .name {
+        font-size: 15.5px;
+    }
+
+    .cartao-lanche .tipo {
+        font-size: 9px;
+    }
+
+    .cartao-lanche .cartao-informacoes .comprar {
+        font-size: 13px;
+        width: 200px;
+        height: 30px;
+    }
+
+    .arrow-left {
+        font-size: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-500%, -250%);
+    }
+    
+    .arrow-right {
+        font-size: 25px;
+        left: auto;
+        top: 50%;
+        right: 50%;
+        transform: translate(500%, -250%);
+    }
+
+    .opcoes {
+        max-width: 350px;
+    }
+
+    .opcoes ul {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .opcoes .botao {
+        width: 160px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-bottom: 0;
+        border-radius: 8px; 
+    }
+
+    .opcoes .botao span {
+        padding-right: 5px; 
+    }
+
+    dialog {
+        transform: translate(-50%, -100%);
     }
 }
