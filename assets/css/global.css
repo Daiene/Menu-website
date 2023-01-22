@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(252, 146, 25, 0.7), rgba(252,199,25,0.7));
 }
 
 main {
@@ -13,11 +14,26 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #d1cab0;
 }
 
 .global {
     display: flex;
     gap: 30px;
     padding: 15px 0;
+}
+
+.background-salada {
+    background: linear-gradient(rgba(241, 130, 3, 0.7), rgba(252,199,25,0.7));
+}
+
+.background-bacon {
+    background: linear-gradient(rgba(246, 42, 45, 0.7), rgba(237,138,139,0.7));
+}
+
+.background-frango{
+    background: linear-gradient(rgba(5, 114, 209, 0.7), rgba(118,190,254,0.7));
+}
+
+.background-tudo{
+    background: linear-gradient(rgba(2, 166, 128, 0.7), rgba(73,208,176,0.7));
 }

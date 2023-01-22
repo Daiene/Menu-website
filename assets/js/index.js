@@ -156,3 +156,24 @@ function resgataValor () {
 
 }
 
+//Mudando a cor de fundo para cada botão
+const btnXSalada = document.getElementById("x-salada");
+const btnXBacon = document.getElementById("x-bacon");
+const btnXFrango = document.getElementById("x-frango");
+const btnXTudo = document.getElementById("x-tudo");
+
+btnXSalada.addEventListener("click", function () {
+  document.querySelector("body").setAttribute("class", "background-salada");
+})
+
+btnXBacon.addEventListener("click", function () {
+  document.querySelector("body").setAttribute("class", "background-bacon");
+})
+
+btnXFrango.addEventListener("click", function () {
+  document.querySelector("body").setAttribute("class", "background-frango");
+})
+
+btnXTudo.addEventListener("click", function () {
+  document.querySelector("body").setAttribute("class", "background-tudo");
+})
