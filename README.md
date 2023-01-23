@@ -18,3 +18,7 @@ Meu desafio nesse projeto com o JavaScript incluiu:
 Além disso, trabalhei com o Media Query para tornar o projeto responsivo e o site também ser usado por celulares.
 
 Veja uma demonstração em gif abaixo:
+
+<p align="center">
+    <img src="assets/video/gif.gif">
+</p>
