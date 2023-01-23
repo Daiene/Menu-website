@@ -1,12 +1,13 @@
+# Menu-website
+
+Link para o site em funcionamento: https://buy-with-menu-website.netlify.app/#
+
 <p align="center">
     <img src="assets/video/gif.gif">
 </p>
 
-# Menu-website
 Um site que te entrega opções de lanche em forma de um cardápio. 
 Veja ingredientes e valores, adicione ingredientes especiais e/ou deixe uma observação em seu pedido, decida se deseja comprar apenas o lanche ou o lanche com batata frita.
-
-Link para o site em funcionamento: https://buy-with-menu-website.netlify.app/#
 
 ## Sobre
 O menu-website nasceu com o objetivo de me entregar desafios para explorar a linguagem JavaScript, para conhecer melhor suas funcionalidades, me dando a oportunidade de aprender e de me desenvolver com ela.
