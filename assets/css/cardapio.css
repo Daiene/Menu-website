@@ -71,6 +71,10 @@
     padding: 10px 0 15px 0;
 }
 
+.cartao-lanche .cartao-informacoes .preco-produto {
+    display: none;
+}
+
 .cartao-lanche .cartao-informacoes .descricao-do-lanche {
     text-align: justify;
     padding-top: 8px;

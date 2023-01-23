@@ -40,7 +40,8 @@
                                 </div>
                             </div>
                             <div class="cartao-informacoes">
-                                <p class="titulo-valor">R$ 23.95</p>
+                                <p class="titulo-valor do-x-salada">R$ 23.95</p>
+                                <p class="preco-produto do-x-salada">R$ 23.95</p>
                                 <h3>Ingredientes</h3>
                                 <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, alface,
                                     tomate, cebola, picles, ketchup e maionese.</p>
@@ -60,29 +61,29 @@
                                     <div class="quantidade">
                                         <h4>Quant.</h4>
                                         <ul>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-adic-hamburg"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada">
+                                                <a><input onchange="resgataValor('do-x-salada')" id="salada-adic-hamburg"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-adic-frango"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada">
+                                                <a onclick="resgataValor('do-x-salada')"><input id="salada-adic-frango"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-adic-bacon"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada">
+                                                <a onclick="resgataValor('do-x-salada')"><input id="salada-adic-bacon"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-adic-ovo"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada">
+                                                <a onclick="resgataValor('do-x-salada')"><input id="salada-adic-ovo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-adic-queijo"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada">
+                                                <a onclick="resgataValor('do-x-salada')"><input id="salada-adic-queijo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-adic-vinagrete"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada">
+                                                <a onclick="resgataValor('do-x-salada')"><input id="salada-adic-vinagrete"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
                                         </ul>
 
@@ -92,22 +93,22 @@
                                         <h4>Preço (cada)</h4>
                                         <ul>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="salada-adic-hamburg-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="salada-adic-frango-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="salada-adic-bacon-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="salada-adic-ovo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="salada-adic-queijo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p  id="salada-adic-vinagrete-preco">R$ 2,00</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -130,7 +131,8 @@
                             </div>
 
                             <div class="cartao-informacoes">
-                                <p class="titulo-valor">R$ <span>27,95</span></p>
+                                <p class="titulo-valor do-x-salada-fritas">R$ 27.95</p>
+                                <p class="preco-produto do-x-salada-fritas">R$ 27.95</p>
                                 <h3>Ingredientes</h3>
                                 <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, alface,
                                     tomate, cebola, picles, ketchup e maionese + 180g de fritas.</p>
@@ -150,29 +152,29 @@
                                     <div class="quantidade">
                                         <h4>Quant.</h4>
                                         <ul>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-fritas-adic-hamburg"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada-fritas">
+                                                <a><input onchange="resgataValor('do-x-salada-fritas')" id="salada-fritas-adic-hamburg"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-fritas-adic-frango"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada-fritas">
+                                                <a onclick="resgataValor('do-x-salada-fritas')"><input id="salada-fritas-adic-frango"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-fritas-adic-bacon"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada-fritas">
+                                                <a onclick="resgataValor('do-x-salada-fritas')"><input id="salada-fritas-adic-bacon"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-fritas-adic-ovo"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada-fritas">
+                                                <a onclick="resgataValor('do-x-salada-fritas')"><input id="salada-fritas-adic-ovo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-fritas-adic-queijo"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada-fritas">
+                                                <a onclick="resgataValor('do-x-salada-fritas')"><input id="salada-fritas-adic-queijo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="salada-fritas-adic-vinagrete"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-salada-fritas">
+                                                <a onclick="resgataValor('do-x-salada-fritas')"><input id="salada-fritas-adic-vinagrete"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
                                         </ul>
 
@@ -182,22 +184,22 @@
                                         <h4>Preço (cada)</h4>
                                         <ul>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="salada-fritas-adic-hamburg-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="salada-fritas-adic-frango-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="salada-fritas-adic-bacon-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="salada-fritas-adic-ovo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="salada-fritas-adic-queijo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p  id="salada-fritas-adic-vinagrete-preco">R$ 2,00</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -225,7 +227,8 @@
                             </div>
 
                             <div class="cartao-informacoes">
-                                <p class="titulo-valor">R$ <span>23,95</span></p>
+                                <p class="titulo-valor do-x-bacon">R$ 23.95</p>
+                                <p class="preco-produto do-x-bacon">R$ 23.95</p>
                                 <h3>Ingredientes</h3>
                                 <p class="descricao-do-lanche">Pão de sal redondo, hambúrguer, queijo, bacon, alface,
                                     tomate, cebola e maionese.</p>
@@ -245,29 +248,29 @@
                                     <div class="quantidade">
                                         <h4>Quant.</h4>
                                         <ul>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon">
+                                                <a><input onchange="resgataValor('do-x-bacon')" id="bacon-adic-hamburg"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon">
+                                                <a onclick="resgataValor('do-x-bacon')"><input id="bacon-adic-frango"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon">
+                                                <a onclick="resgataValor('do-x-bacon')"><input id="bacon-adic-bacon"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon">
+                                                <a onclick="resgataValor('do-x-bacon')"><input id="bacon-adic-ovo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon">
+                                                <a onclick="resgataValor('do-x-bacon')"><input id="bacon-adic-queijo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-bacon" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon">
+                                                <a onclick="resgataValor('do-x-bacon')"><input id="bacon-adic-vinagrete"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
                                         </ul>
 
@@ -277,22 +280,22 @@
                                         <h4>Preço (cada)</h4>
                                         <ul>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="bacon-adic-hamburg-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="bacon-adic-frango-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="bacon-adic-bacon-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="bacon-adic-ovo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="bacon-adic-queijo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p  id="bacon-adic-vinagrete-preco">R$ 2,00</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -314,7 +317,8 @@
                             </div>
 
                             <div class="cartao-informacoes">
-                                <p class="titulo-valor">R$ <span>27,95</span></p>
+                                <p class="titulo-valor do-x-bacon-fritas">R$ 27.95</p>
+                                <p class="preco-produto do-x-bacon-fritas">R$ 27.95</p>
                                 <h3>Ingredientes</h3>
                                 <p class="descricao-do-lanche">Pão de sal redondo, hambúrguer, queijo, bacon, alface,
                                     tomate, cebola e maionese + 180g de fritas.</p>
@@ -334,29 +338,29 @@
                                     <div class="quantidade">
                                         <h4>Quant.</h4>
                                         <ul>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon-fritas">
+                                                <a><input onchange="resgataValor('do-x-bacon-fritas')" id="bacon-adic-hamburg"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon-fritas">
+                                                <a onclick="resgataValor('do-x-bacon-fritas')"><input id="bacon-adic-frango"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon-fritas">
+                                                <a onclick="resgataValor('do-x-bacon-fritas')"><input id="bacon-adic-bacon"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon-fritas">
+                                                <a onclick="resgataValor('do-x-bacon-fritas')"><input id="bacon-adic-ovo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon-fritas">
+                                                <a onclick="resgataValor('do-x-bacon-fritas')"><input id="bacon-adic-queijo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-baconEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-bacon-fritas">
+                                                <a onclick="resgataValor('do-x-bacon-fritas')"><input id="bacon-adic-vinagrete"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
                                         </ul>
 
@@ -366,22 +370,22 @@
                                         <h4>Preço (cada)</h4>
                                         <ul>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="bacon-fritas-adic-hamburg-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="bacon-fritas-adic-frango-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="bacon-fritas-adic-bacon-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="bacon-fritas-adic-ovo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="bacon-fritas-adic-queijo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p  id="bacon-fritas-adic-vinagrete-preco">R$ 2,00</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -410,7 +414,8 @@
                             </div>
 
                             <div class="cartao-informacoes">
-                                <p class="titulo-valor">R$ <span>23,95</span></p>
+                                <p class="titulo-valor do-x-frango">R$ 23.95</p>
+                                <p class="preco-produto do-x-frango">R$ 23.95</p>
                                 <h3>Ingredientes</h3>
                                 <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin , filé de frango, queijo,
                                     alface, tomate e maionese.</p>
@@ -430,29 +435,29 @@
                                     <div class="quantidade">
                                         <h4>Quant.</h4>
                                         <ul>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango">
+                                                <a><input onchange="resgataValor('do-x-frango')" id="bacon-adic-hamburg"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango">
+                                                <a onclick="resgataValor('do-x-frango')"><input id="bacon-adic-frango"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango">
+                                                <a onclick="resgataValor('do-x-frango')"><input id="bacon-adic-bacon"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango">
+                                                <a onclick="resgataValor('do-x-frango')"><input id="bacon-adic-ovo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango">
+                                                <a onclick="resgataValor('do-x-frango')"><input id="bacon-adic-queijo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frango"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango">
+                                                <a onclick="resgataValor('do-x-frango')"><input id="bacon-adic-vinagrete"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -460,22 +465,22 @@
                                         <h4>Preço (cada)</h4>
                                         <ul>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="frango-adic-hamburg-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="frango-adic-frango-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="frango-adic-bacon-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="frango-adic-ovo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="frango-adic-queijo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p  id="frango-adic-vinagrete-preco">R$ 2,00</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -499,7 +504,8 @@
                             </div>
 
                             <div class="cartao-informacoes">
-                                <p class="titulo-valor">R$ <span>27,95</span></p>
+                                <p class="titulo-valor do-x-frango-fritas">R$ 27.95</p>
+                                <p class="preco-produto do-x-frango-fritas">R$ 27.95</p>
                                 <h3>Ingredientes</h3>
                                 <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin , filé de frango, queijo,
                                     alface, tomate e maionese + 180g de fritas.</p>
@@ -519,29 +525,29 @@
                                     <div class="quantidade">
                                         <h4>Quant.</h4>
                                         <ul>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango-fritas">
+                                                <a><input onchange="resgataValor('do-x-frango-fritas')" id="bacon-adic-hamburg"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango-fritas">
+                                                <a onclick="resgataValor('do-x-frango-fritas')"><input id="bacon-adic-frango"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango-fritas">
+                                                <a onclick="resgataValor('do-x-frango-fritas')"><input id="bacon-adic-bacon"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango-fritas">
+                                                <a onclick="resgataValor('do-x-frango-fritas')"><input id="bacon-adic-ovo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango-fritas">
+                                                <a onclick="resgataValor('do-x-frango-fritas')"><input id="bacon-adic-queijo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-frangoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-frango-fritas">
+                                                <a onclick="resgataValor('do-x-frango-fritas')"><input id="bacon-adic-vinagrete"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
                                         </ul>
 
@@ -550,22 +556,22 @@
                                         <h4>Preço (cada)</h4>
                                         <ul>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="frango-fritas-adic-hamburg-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="frango-fritas-adic-frango-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="frango-fritas-adic-bacon-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="frango-fritas-adic-ovo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="frango-fritas-adic-queijo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p  id="frango-fritas-adic-vinagrete-preco">R$ 2,00</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -594,7 +600,8 @@
                             </div>
 
                             <div class="cartao-informacoes">
-                                <p class="titulo-valor">R$ <span>29,50</span></p>
+                                <p class="titulo-valor do-x-tudo">R$ 29.55</p>
+                                <p class="preco-produto do-x-tudo">R$ 29.55</p>
                                 <h3>Ingredientes</h3>
                                 <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, filé de
                                     frango, queijo, bacon, alface, tomate, cebola, ketchup e maionese.</p>
@@ -614,29 +621,29 @@
                                     <div class="quantidade">
                                         <h4>Quant.</h4>
                                         <ul>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo">
+                                                <a><input onchange="resgataValor('do-x-tudo')" id="bacon-adic-hamburg"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo">
+                                                <a onclick="resgataValor('do-x-tudo')"><input id="bacon-adic-frango"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo">
+                                                <a onclick="resgataValor('do-x-tudo')"><input id="bacon-adic-bacon"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo">
+                                                <a onclick="resgataValor('do-x-tudo')"><input id="bacon-adic-ovo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo">
+                                                <a onclick="resgataValor('do-x-tudo')"><input id="bacon-adic-queijo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudo" type="number"
-                                                        value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo">
+                                                <a onclick="resgataValor('do-x-tudo')"><input id="bacon-adic-vinagrete"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
                                         </ul>
 
@@ -645,22 +652,22 @@
                                         <h4>Preço (cada)</h4>
                                         <ul>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="tudo-adic-hamburg-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="tudo-adic-frango-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="tudo-adic-bacon-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="tudo-adic-ovo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="tudo-adic-queijo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p  id="tudo-adic-vinagrete-preco">R$ 2,00</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -682,7 +689,8 @@
                             </div>
 
                             <div class="cartao-informacoes">
-                                <p class="titulo-valor">R$ <span>33,50</span></p>
+                                <p class="titulo-valor do-x-tudo-fritas">R$ 33.55</p>
+                                <p class="preco-produto do-x-tudo-fritas">R$ 33.55</p>
                                 <h3>Ingredientes</h3>
                                 <p class="descricao-do-lanche">Pão de sal redondo c/ gergelin, hambúrguer, filé de
                                     frango, queijo, bacon, alface, tomate, cebola, ketchup e maionese + 180g de fritas.
@@ -703,29 +711,29 @@
                                     <div class="quantidade">
                                         <h4>Quant.</h4>
                                         <ul>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo-fritas">
+                                                <a><input onchange="resgataValor('do-x-tudo-fritas')" id="bacon-adic-hamburg"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo-fritas">
+                                                <a onclick="resgataValor('do-x-tudo-fritas')"><input id="bacon-adic-frango"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo-fritas">
+                                                <a onclick="resgataValor('do-x-tudo-fritas')"><input id="bacon-adic-bacon"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo-fritas">
+                                                <a onclick="resgataValor('do-x-tudo-fritas')"><input id="bacon-adic-ovo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo-fritas">
+                                                <a onclick="resgataValor('do-x-tudo-fritas')"><input id="bacon-adic-queijo"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
-                                            <li class="combobox">
-                                                <a onclick="resgataValor()"><input id="number-value-tudoEBatata"
-                                                        type="number" value="" min="1" max="3"></a>
+                                            <li class="combobox do-x-tudo-fritas">
+                                                <a onclick="resgataValor('do-x-tudo-fritas')"><input id="bacon-adic-vinagrete"
+                                                        type="number" value="" min="0" max="3"></a>
                                             </li>
                                         </ul>
 
@@ -735,22 +743,22 @@
                                         <h4>Preço (cada)</h4>
                                         <ul>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="tudo-fritas-adic-hamburg-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 3,00</p>
+                                                <p id="tudo-fritas-adic-frango-preco">R$ 3,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="tudo-fritas-adic-bacon-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="tudo-fritas-adic-ovo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p id="tudo-fritas-adic-queijo-preco">R$ 2,00</p>
                                             </li>
                                             <li class="combobox-texto">
-                                                <p>R$ 2,00</p>
+                                                <p  id="tudo-fritas-adic-vinagrete-preco">R$ 2,00</p>
                                             </li>
                                         </ul>
                                     </div>

@@ -141,42 +141,21 @@ controls.forEach((control) => {
 });
 
 //Código de uma calculadora para aumentar o valor conforme cada adicional escolhido
-function resgataValor() {
-  const inputSaladaHamburg = document.querySelector("#salada-adic-hamburg");
-  /*const inputSaladaFritasHamburg = document.querySelector("#salada-fritas-adic-hamburg");
-  const inputSaladaFrango = document.querySelector(".salada-adic-frango");
-  const inputSaladaBacon = document.querySelector(".salada-adic-bacon");
-  const inputSaladaOvo = document.querySelector(".salada-adic-ovo");
-  const inputSaladaQueijo = document.querySelector(".salada-adic-queijo");
-  const inputSaladaVinagrete = document.querySelector(".salada-adic-vinagrete");*/
-  
+function resgataValor(produto) {
+  const inputs = document.querySelectorAll(`.${produto} input`);
+  const valorProduto = Number(document.querySelector(`.preco-produto.${produto}`).innerHTML.replace("R$ ", ""));
+  let valorAdicionais = 0;
 
-  const valueSaladaHamburg = inputSaladaHamburg.valueAsNumber;
-  /*const valueSaladaFritasHamburg = inputSaladaFritasHamburg.valueAsNumber;
-  const valueSaladaFrango = inputSaladaFrango.valueAsNumber;
-  const valueSaladaBacon = inputSaladaBacon.valueAsNumber;
-  const valueSaladaOvo = inputSaladaOvo.valueAsNumber;
-  const valueSaladaQueijo = inputSaladaQueijo.valueAsNumber;
-  const valueSaladaVinagrete = inputSaladaVinagrete.valueAsNumber;*/
+  inputs.forEach(input => {
+    const quantidade = input.value;
+    const valor = document.querySelector(`#${input.id}-preco`).innerText.replace("R$ ", "").replace(",", ".");
+    valorAdicionais += quantidade*valor;
+  })
 
-  const multiplicacaoHamburg = valueSaladaHamburg * 3;
-  /*const multiplicacaoFritasHamburg = valueSaladaFritasHamburg * 3;
-  const multiplicacaoFrango = valueSaladaFrango * 3;
-  const multiplicacaoBacon = valueSaladaBacon * 2;
-  const multiplicacaoOvo = valueSaladaOvo * 2;
-  const multiplicacaoQueijo = valueSaladaQueijo * 2;
-  const multiplicacaoVinagrete = valueSaladaVinagrete * 2;
+  const totalValorProduto = valorProduto + valorAdicionais;
+  document.querySelector(`.titulo-valor.${produto}`).innerHTML = "R$ " + totalValorProduto;
 
-  let somaSalada = multiplicacaoHamburg + multiplicacaoFrango + multiplicacaoBacon + multiplicacaoOvo + multiplicacaoQueijo + multiplicacaoVinagrete;
-
-  console.log(somaSalada);*/
-
-  const somaFinalSalada = 23.95 + multiplicacaoHamburg;
-  /*const somaFinalSaladaFritas = 27.95 + multiplicacaoFritasHamburg;*/
-
-  document.querySelector(".titulo-valor").innerHTML = "R$ " + somaFinalSalada;
-  /*document.querySelector(".titulo-valor").innerHTML = "R$ " + somaFinalSaladaFritas;*/
-
+  console.log(totalValorProduto);
 }
 
 //Mudando a cor de fundo para cada botão
