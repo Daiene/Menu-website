@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="assets/video/gif.gif">
+</p>
+
 # Menu-website
 Um site que te entrega opções de lanche em forma de um cardápio. 
 Veja ingredientes e valores, adicione ingredientes especiais e/ou deixe uma observação em seu pedido, decida se deseja comprar apenas o lanche ou o lanche com batata frita.
@@ -19,6 +23,3 @@ Além disso, trabalhei com o Media Query para tornar o projeto responsivo e o si
 
 Veja uma demonstração em gif abaixo:
 
-<p align="center">
-    <img src="assets/video/gif.gif">
-</p>
