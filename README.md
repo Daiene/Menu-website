@@ -20,6 +20,3 @@ Meu desafio nesse projeto com o JavaScript incluiu:
 - E o mais desafiador de todos, que me tomou muito tempo, foi fazer a parte da calculadora, pois quando o usuário inserir a quantidade de itens adicionais que deseja, o valor final do lanche precisa ser alterado. Essa é a única parte que não está finalizada 100%. Sei que tenho muito a melhorar ainda, mas me contento em ver o melhor que eu tenho hoje.
 
 Além disso, trabalhei com o Media Query para tornar o projeto responsivo e o site também ser usado por celulares.
-
-Veja uma demonstração em gif abaixo:
-
