@@ -154,8 +154,6 @@ function resgataValor(produto) {
 
   const totalValorProduto = valorProduto + valorAdicionais;
   document.querySelector(`.titulo-valor.${produto}`).innerHTML = "R$ " + totalValorProduto;
-
-  console.log(totalValorProduto);
 }
 
 //Mudando a cor de fundo para cada botão
